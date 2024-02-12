@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiche Emploi</title>
+</head>
+<body>
+    <h1>Fiche Emploi</h1>
+    <form action="recuperation.jsp" method="post">
+        <label for="nom">Nom:</label>
+        <input type="text" id="nom" name="nom" required><br><br>
+        
+        <label for="prenom">Prénom:</label>
+        <input type="text" id="prenom" name="prenom" required><br><br>
+        
+        <label for="annee_naissance">Année de naissance:</label>
+        <input type="number" id="annee_naissance" name="annee_naissance" required><br><br>
+        
+        <label for="adresse">Adresse:</label>
+        <input type="text" id="adresse" name="adresse" required><br><br>
+        
+        <label>Sexe:</label>
+        <input type="radio" id="sexe_m" name="sexe" value="M" required>
+        <label for="sexe_m">M</label>
+        <input type="radio" id="sexe_f" name="sexe" value="F">
+        <label for="sexe_f">F</label><br><br>
+        
+        <label for="niveau_etude">Niveau d'étude:</label>
+        <select id="niveau_etude" name="niveau_etude" required>
+            <option value="">Sélectionner...</option>
+            <option value="Bac">Bac</option>
+            <option value="Bac+2">Bac+2</option>
+            <option value="Bac+3">Bac+3</option>
+            <option value="Bac+5 et plus">Bac+5 et plus</option>
+        </select><br><br>
+        
+        <button type="submit">Valider</button>
+        <button type="reset">Annuler</button>
+    </form>
+</body>
+</html>
